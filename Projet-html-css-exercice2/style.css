@@ -1,0 +1,237 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Raleway:400,200,100,300,500,600,700,800,900);
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 22px;
+    font-family: Open Sans, Arial, sans-serif ;
+	font-family: Helvetica, Arial, sans-serif, 'Raleway';
+	font-family: Raleway, Arial, sans-serif ;
+
+}
+span{
+    font-weight: bold;
+    font-size: 30px;
+}
+/* en tete */
+header{
+    background-image: url(/Archive/assets/img/clients_logo_120px_1.png);
+    height: 120px;
+    padding-top: 25px ;
+    border-bottom: 2px solid #fff;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav a span {
+    color: green;
+    text-decoration: underline;
+}
+ nav img{
+    width: 500px;
+}
+/* corp de la page */
+/* premier partie */
+.partie1 {
+    padding-top: 50px;
+    background-image: url(/Archive/assets/img/clients_logo_120px_1.png);
+    color: #fff;
+    text-align: center;
+}
+.partie1 .new{
+    color: green;
+}
+.partie1 p span.gras{
+    font-weight: bold;
+    color: #fff;
+}
+.partie1 span{
+    font-size: #3d9f96;
+}
+.partie1 button {
+    color: #fff;
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+}
+/* deuxieme partie */
+.social{
+    text-align: center;
+    padding-top: 25px;
+}
+h5{
+    color: #3d9f96;
+    font-size: 25px;
+}
+.partie2 {
+    background-image: url(/Archive/assets/img/map_bg.png);
+    text-align: center;
+    padding-top: 25px;
+    height: 800px;
+}
+.play{
+    background-image: url(/Archive/assets/img/image_190px_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 550px;
+}
+.play figure{
+    padding-top: 275px;
+}
+.conteneur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .social{
+    background-color: 	#f7f7f7;
+    height: 200px;
+    padding-top: 100px;
+}
+/* troisieme partie */
+.partie3{
+    background-image: url(/Archive/assets/img/clients_logo_120px_2.png);
+    color: #fff;
+    text-align: center;
+    height: 250px;
+}
+.partie3 p{
+    padding: 20px;
+}
+.partie3 h6 {
+    color: green;
+} 
+/* quatrieme partie */
+.partie4{
+    background-color: #f7f7f7;
+    text-align: center;
+    padding-top: 10px;
+    height: 500px;
+}
+.sreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sreen figure{
+    padding-top: 50px;
+    margin-right: 25px;
+}
+/* image de l'iphone et ordinateur */
+.tested{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+.tested img{
+    background-image: url(/Archive/assets/img/dzdzd.png);
+    background-repeat: no-repeat;
+
+}
+.tested button{
+    background-color: #3d9f96;
+    width: 200px;
+    height: 50px;
+    border: 0px solid #3d9f96;
+    border-radius: 10px;
+}
+.responsive{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+
+}
+.responsive button{  
+    background-color: #3d9f96;
+    width: 200px;
+    height: 50px;
+    border: 0px solid #3d9f96;
+    border-radius: 10px;
+
+}
+/* 5éme partie */
+ .item{
+     background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+ .sayna img{
+    width: 300px;
+}
+/*pied de la page */
+footer{
+    height: 100px;
+}
+footer p{
+    padding-top: 25px;
+}
+footer figure{
+    float: right;
+    margin: 5px;
+}
+/* responsive */
+@media only screen and (max-width: 1000px) {
+    /* menu de navigation */
+    nav a{
+        display: none;
+    }
+    /* social media */
+    .social{
+        height: 50px;
+        padding-bottom: 40px;
+    }
+    /* deuxieme partie */
+    .partie2{
+        height: 1500px;
+    }
+    .partie2 .conteneur{
+        flex-direction: column;
+    }
+    .social h5{
+        display: none;
+    }
+    /* 4éme partie */
+    figure .columm{
+        flex-direction: column;
+    }
+    .suprimer{
+        display: none;
+    }
+    .tested{
+        flex-direction: column;
+        height: 800px;
+    }
+    .responsive{
+        flex-direction: column;
+        height: 900px;
+    }
+    /* 5éme partie */
+    .item{
+        flex-direction: column;
+        text-align: center;
+        height: 500px;
+    }
+    /* pied de la page */
+    footer p{
+        text-align: center;
+    }
+.pied{
+    display: flex;
+    justify-content: center;
+}  
+}
